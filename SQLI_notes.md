@@ -48,6 +48,7 @@ An error occurs when the specified column index exceeds the actual column count.
 ' UNION SELECT NULL,NULL--
 ' UNION SELECT NULL,NULL,NULL--
 ```
+![SQL Injection Lab](SQL_injection/Lab_01.png)
 If the number of `NULL` values is incorrect, an error occurs. When correct, an additional row is displayed.
 
 **Note:** On Oracle databases, `DUAL` is required:
